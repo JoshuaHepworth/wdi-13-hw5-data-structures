@@ -31,7 +31,7 @@ console.log('data structure');
 
 // A list of student names from our class, each with a location.
 
-//e. Objects
+//e. Arrays in Objects
 // const studentInClass = {
 // 	student1: {
 // 		name: 'name',
@@ -211,11 +211,17 @@ let oddBonds = []
 for (let key in bondFilms) {
 	if (bondFilms[key].year % 3 === 0) {
 		oddBonds = bondFilms[key].year;
-		console.log(oddBonds);
-		// console.log(bondFilms[key].year)
-	}
-	// console.log(bondFilms[key].year)
+		// console.log(oddBonds);
+		}
 }
 
-
-
+// Determine the total cumulative gross of the Bond franchise, and console.log the result.
+let bondMoney = [];
+for (let key in bondFilms) {
+	bondMoney = Number(bondFilms[key].gross.substring(1).replace(/,/g,''));
+	//i have the gross in a separate array...now how to add them
+	//how to remove $ from gross.
+	// console.log(bondMoney);
+	}
+	console.log(bondMoney);
+	console.log(`The James Bond films accumulated ${bondMoney} dollars`);
