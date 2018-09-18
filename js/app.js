@@ -221,12 +221,21 @@ for (let key in bondFilms) {
 }
 
 // Determine the total cumulative gross of the Bond franchise, and console.log the result.
+let bondFilmTotal = [];
 let bondMoney = [];
-for (let key in bondFilms) {
-	bondMoney = Number(bondFilms[key].gross.substring(1).replace(/,/g,''));
+for (let i = 0; i < bondFilms.length; i++) {
+	bondMoney = Number(bondFilms[i].gross.replace(/[^0-9.-]+/g,""));
+	bondFilmTotal += bondMoney;
 	//i have the gross in a separate array...now how to add them
 	//how to remove $ from gross.
+
 	// console.log(bondMoney);
+	// console.log(`The James Bond films accumulated ${bondMoney} dollars`);	// console.log(bondMoney);
 	}
-	console.log(bondMoney);
-	console.log(`The James Bond films accumulated ${bondMoney} dollars`);
+	console.log(bondFilmTotal)
+	// console.log(bondMoney);
+	// console.log(`The James Bond films accumulated ${bondMoney} dollars`);
+
+
+
+
