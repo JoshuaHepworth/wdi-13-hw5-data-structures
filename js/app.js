@@ -55,7 +55,7 @@ console.log('data structure');
 // A list of student names from our class, each with a location and each with a list of favorite tv shows.
 
 
-//f. Object 
+//f. Object s in objects
 
 // 	student1: {
 // 		name: 'name',
@@ -75,6 +75,44 @@ console.log('data structure');
 
 
 // }
+
+
+//-------------2. Take it easy
+
+//// Make an array that holds all of the colors of the rainbow.
+const rainbow = ['red','orange','yellow','green','blue',]
+// Write code that will access "blue" from the rainbow array.
+rainbow[4];
+console.log(rainbow[4]);
+// Make an object that is called your name and holds the 
+// information about your favorite food, a hobby, the name of the town that you live in currently, and your favorite datatype.
+const joshHepworth = {
+	favoriteFood: 'tacos',
+	hobby: 'drawing',
+	city: 'Geneva',
+	favoriteDataType: 'strings'
+
+};
+// Write code that will access your hobby from the object that you just created.
+joshHepworth.favoriteFood;
+console.log(joshHepworth.favoriteFood);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
