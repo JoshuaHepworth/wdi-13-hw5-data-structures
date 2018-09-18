@@ -16,12 +16,17 @@ console.log('data structure');
 // A user's email address.
 
 //b. String
-// const userEmail = ('user@email.com')
+// const userEmail = 'user@email.com'
 
 // A spaceship with a hull, laser blasters, tractor beam, and warp drive.
 
-//c. Array
-//const spaceship = ['hull','laser blasters','tractor beam','warp drive']
+//c. Object
+//const spaceship = {
+	// hull: ,
+	// laser blasters: ,
+	// tractor beam: ,
+	// warp drive:
+// }
 
 // A list of student names from our class.
 
@@ -204,14 +209,14 @@ const bondFilms = [
 let bondTitles = []
 for (let key in bondFilms) {
 	bondTitles = bondFilms[key].title;
-	// console.log(bondTitles)
+	console.log(bondTitles)
 }
 //Create a new array oddBonds, of only the Bond films released on odd-numbered years.
 let oddBonds = []
 for (let key in bondFilms) {
-	if (bondFilms[key].year % 3 === 0) {
+	if (bondFilms[key].year % 2 === 1) {
 		oddBonds = bondFilms[key].year;
-		// console.log(oddBonds);
+		console.log(oddBonds);
 		}
 }
 
